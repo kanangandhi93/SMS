@@ -270,6 +270,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="assets\" />
+    <Folder Include="fortawesome.github.io\" />
+    <Folder Include="responsive-email\" />
+    <Folder Include="_http_\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
