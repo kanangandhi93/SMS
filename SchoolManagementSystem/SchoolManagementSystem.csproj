@@ -200,12 +200,16 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SchoolsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MassConv.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\modelDBSchool.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -221,7 +225,94 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>modelDBSchool.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\tblAccAmt.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblAccount.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblAdmission.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblAsset.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblBranch.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblCandidateTypeId.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblCategory.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblClassType.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblDay.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblDayType.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblDivision.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblExam.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblExamMedium.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblFee.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblFeesType.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblGood.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblHostel.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblHostelRoom.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblMassMaster.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblMassSub.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblRoom.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblSalary.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\tblSchool.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblStd.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblStudentParentDetail.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblSubject.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblTerm.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblVehicle.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tblVehiclePrevillage.cs">
+      <DependentUpon>modelDBSchool.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VechicleType.cs">
       <DependentUpon>modelDBSchool.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -304,6 +395,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Schools\Create.cshtml" />
+    <Content Include="Views\Schools\Delete.cshtml" />
+    <Content Include="Views\Schools\Details.cshtml" />
+    <Content Include="Views\Schools\Edit.cshtml" />
+    <Content Include="Views\Schools\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

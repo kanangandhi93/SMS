@@ -12,35 +12,34 @@ namespace SchoolManagementSystem.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class tblSchool
+    public partial class tblBranch
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public tblSchool()
+        public tblBranch()
         {
             this.tblAccAmts = new HashSet<tblAccAmt>();
             this.tblAdmissions = new HashSet<tblAdmission>();
             this.tblAssets = new HashSet<tblAsset>();
-            this.tblBranches = new HashSet<tblBranch>();
             this.tblClassTypes = new HashSet<tblClassType>();
             this.tblDays = new HashSet<tblDay>();
             this.tblDivisions = new HashSet<tblDivision>();
             this.tblExams = new HashSet<tblExam>();
             this.tblFees = new HashSet<tblFee>();
-            this.tblGoods = new HashSet<tblGood>();
             this.tblHostels = new HashSet<tblHostel>();
             this.tblHostelRooms = new HashSet<tblHostelRoom>();
             this.tblRooms = new HashSet<tblRoom>();
             this.tblSalaries = new HashSet<tblSalary>();
             this.tblStds = new HashSet<tblStd>();
             this.tblStudentParentDetails = new HashSet<tblStudentParentDetail>();
+            this.tblSubjects = new HashSet<tblSubject>();
             this.tblTerms = new HashSet<tblTerm>();
             this.tblVehiclePrevillages = new HashSet<tblVehiclePrevillage>();
             this.VechicleTypes = new HashSet<VechicleType>();
         }
     
-        public long Id { get; set; }
-        public string SchoolName { get; set; }
-        public string Logo { get; set; }
+        public int BranchId { get; set; }
+        public Nullable<long> SchoolId { get; set; }
+        public string BranchName { get; set; }
         public string AddressLine1 { get; set; }
         public string AddressLine2 { get; set; }
         public string AddressLine3 { get; set; }
@@ -61,8 +60,7 @@ namespace SchoolManagementSystem.Models
         public virtual ICollection<tblAdmission> tblAdmissions { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblAsset> tblAssets { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tblBranch> tblBranches { get; set; }
+        public virtual tblSchool tblSchool { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblClassType> tblClassTypes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -73,8 +71,6 @@ namespace SchoolManagementSystem.Models
         public virtual ICollection<tblExam> tblExams { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblFee> tblFees { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tblGood> tblGoods { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblHostel> tblHostels { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -87,7 +83,8 @@ namespace SchoolManagementSystem.Models
         public virtual ICollection<tblStd> tblStds { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblStudentParentDetail> tblStudentParentDetails { get; set; }
-        public virtual tblSubject tblSubject { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tblSubject> tblSubjects { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblTerm> tblTerms { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

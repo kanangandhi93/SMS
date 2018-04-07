@@ -4,8 +4,108 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6efa9e391c0743c6aef5513294215396" Name="Diagram1">
+      <Diagram DiagramId="6efa9e391c0743c6aef5513294215396" Name="Diagram1" ZoomLevel="88">
         <EntityTypeShape EntityType="DBSchoolModel.tblSchool" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSchoolModel.MassConv" Width="1.5" PointX="13.5" PointY="25.375" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblAccAmt" Width="1.5" PointX="5.25" PointY="8.875" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblAccount" Width="1.5" PointX="3" PointY="7.625" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblAdmission" Width="1.5" PointX="13.5" PointY="5.625" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblAsset" Width="1.5" PointX="8.25" PointY="8.625" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblBranch" Width="1.5" PointX="3" PointY="10.75" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblCandidateTypeId" Width="1.5" PointX="11.25" PointY="23" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblCategory" Width="1.5" PointX="11.25" PointY="19.625" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblClassType" Width="1.5" PointX="11.25" PointY="12.125" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblDay" Width="1.5" PointX="18.75" PointY="5.875" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblDayType" Width="1.5" PointX="7.375" PointY="16.5" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblDivision" Width="1.5" PointX="10.5" PointY="4.125" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblExam" Width="1.5" PointX="10.5" PointY="7.5" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblExamMedium" Width="1.5" PointX="11.25" PointY="1.25" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblFee" Width="1.5" PointX="5.25" PointY="13" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblFeesType" Width="1.5" PointX="3" PointY="19.625" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblGood" Width="1.5" PointX="13.5" PointY="0.75" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblHostel" Width="1.5" PointX="8.25" PointY="3.125" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblHostelRoom" Width="1.5" PointX="21.75" PointY="8.875" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblMassMaster" Width="1.5" PointX="9" PointY="25.5" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblMassSub" Width="1.5" PointX="11.25" PointY="25.375" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblRoom" Width="1.5" PointX="18.5" PointY="1.875" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblSalary" Width="1.5" PointX="15.75" PointY="4.125" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblStd" Width="1.5" PointX="5.25" PointY="3.625" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblStudentParentDetail" Width="1.5" PointX="15.75" PointY="7.75" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblSubject" Width="1.5" PointX="13.5" PointY="14.125" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblTerm" Width="1.5" PointX="11.25" PointY="16.125" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblVehicle" Width="1.5" PointX="13.5" PointY="18.125" />
+        <EntityTypeShape EntityType="DBSchoolModel.tblVehiclePrevillage" Width="1.5" PointX="15.75" PointY="14.875" />
+        <EntityTypeShape EntityType="DBSchoolModel.VechicleType" Width="1.5" PointX="8.25" PointY="13.25" />
+        <AssociationConnector Association="DBSchoolModel.FK_MassConv_tblMassMaster" />
+        <AssociationConnector Association="DBSchoolModel.FK_MassConv_tblMassSub" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAccAmt_tblAccount" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAccAmt_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAccAmt_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAccAmt_tblTerm" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAdmission_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAdmission_tblCandidateTypeId" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAdmission_tblCategory" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAdmission_tblExamMedium" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAdmission_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAdmission_tblStd" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblDay_tblAdmission" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblHostelRoom_tblAdmission" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblSalary_tblAdmission" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblStudentParentDetail_tblAdmission" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblVehiclePrevillage_tblAdmission" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAsset_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAsset_tblClassType" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAsset_tblRoom" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAsset_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblAsset_tblStd" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblBranch_tblBranch1" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblClassType_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblDay_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblDivision_tblDivision" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblExam_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblFees_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblHostel_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblHostelRoom_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblRoom_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblSalary_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblStd_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblStudentParentDetail_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblSubject_tblSubject" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblTerm_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblVehiclePrevillage_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_VechicleType_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblClassType_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblRoom_tblClassType" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblDay_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblDivision_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblDivision_tblStd" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblExam_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblExam_tblStd" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblExam_tblSubject" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblExam_tblTerm" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblFees_tblFeesType" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblFees_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblFees_tblStd" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblGoods_tblBranch" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblGoods_tblGoods" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblGoods_tblHostel" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblGoods_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblHostel_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblHostelRoom_tblHostel" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblHostelRoom_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblMassSub_tblMassMaster" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblRoom_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblRoom_tblStd" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblSalary_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblStd_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblStudentParentDetail_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblSubject_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblTerm_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblVehiclePrevillage_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_VechicleType_tblSchool" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblSubject_tblStd" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblVehiclePrevillage_tblVehicle" />
+        <AssociationConnector Association="DBSchoolModel.FK_tblVehiclePrevillage_VechicleType" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

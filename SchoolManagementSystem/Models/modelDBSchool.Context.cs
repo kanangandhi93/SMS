@@ -26,5 +26,35 @@ namespace SchoolManagementSystem.Models
         }
     
         public virtual DbSet<tblSchool> tblSchools { get; set; }
+        public virtual DbSet<MassConv> MassConvs { get; set; }
+        public virtual DbSet<tblAccAmt> tblAccAmts { get; set; }
+        public virtual DbSet<tblAccount> tblAccounts { get; set; }
+        public virtual DbSet<tblAdmission> tblAdmissions { get; set; }
+        public virtual DbSet<tblAsset> tblAssets { get; set; }
+        public virtual DbSet<tblBranch> tblBranches { get; set; }
+        public virtual DbSet<tblCandidateTypeId> tblCandidateTypeIds { get; set; }
+        public virtual DbSet<tblCategory> tblCategories { get; set; }
+        public virtual DbSet<tblClassType> tblClassTypes { get; set; }
+        public virtual DbSet<tblDay> tblDays { get; set; }
+        public virtual DbSet<tblDayType> tblDayTypes { get; set; }
+        public virtual DbSet<tblDivision> tblDivisions { get; set; }
+        public virtual DbSet<tblExam> tblExams { get; set; }
+        public virtual DbSet<tblExamMedium> tblExamMediums { get; set; }
+        public virtual DbSet<tblFee> tblFees { get; set; }
+        public virtual DbSet<tblFeesType> tblFeesTypes { get; set; }
+        public virtual DbSet<tblGood> tblGoods { get; set; }
+        public virtual DbSet<tblHostel> tblHostels { get; set; }
+        public virtual DbSet<tblHostelRoom> tblHostelRooms { get; set; }
+        public virtual DbSet<tblMassMaster> tblMassMasters { get; set; }
+        public virtual DbSet<tblMassSub> tblMassSubs { get; set; }
+        public virtual DbSet<tblRoom> tblRooms { get; set; }
+        public virtual DbSet<tblSalary> tblSalaries { get; set; }
+        public virtual DbSet<tblStd> tblStds { get; set; }
+        public virtual DbSet<tblStudentParentDetail> tblStudentParentDetails { get; set; }
+        public virtual DbSet<tblSubject> tblSubjects { get; set; }
+        public virtual DbSet<tblTerm> tblTerms { get; set; }
+        public virtual DbSet<tblVehicle> tblVehicles { get; set; }
+        public virtual DbSet<tblVehiclePrevillage> tblVehiclePrevillages { get; set; }
+        public virtual DbSet<VechicleType> VechicleTypes { get; set; }
     }
 }
