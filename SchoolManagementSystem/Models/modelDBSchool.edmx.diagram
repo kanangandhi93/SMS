@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6efa9e391c0743c6aef5513294215396" Name="Diagram1" ZoomLevel="88">
+      <Diagram DiagramId="6efa9e391c0743c6aef5513294215396" Name="Diagram1" ZoomLevel="84">
         <EntityTypeShape EntityType="DBSchoolModel.tblSchool" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DBSchoolModel.MassConv" Width="1.5" PointX="13.5" PointY="25.375" />
         <EntityTypeShape EntityType="DBSchoolModel.tblAccAmt" Width="1.5" PointX="5.25" PointY="8.875" />

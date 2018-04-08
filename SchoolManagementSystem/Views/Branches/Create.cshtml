@@ -1,0 +1,133 @@
+﻿@model SchoolManagementSystem.Models.tblBranch
+
+@{
+    ViewBag.Title = "BranchCreate";
+}
+
+<ol class="breadcrumb"></ol>
+<div class="container-fluid">
+    <div data-widget-group="group1">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-white" data-widget='{"draggable": "false"}'>
+                    <div class="panel-heading">
+                        <h2>Branch Create</h2>
+                        <!-- <div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'></div> -->
+                    </div>
+                    <div class="panel-body">
+                        <form class="grid-form">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+
+
+                                <fieldset>
+                                    <legend>Please open an Branch at</legend>
+                                    <div data-row-span="1">
+                                        <div data-field-span="1">
+                                            @Html.DropDownList("SchoolId", null, htmlAttributes: new { @id = "e1", @style = "width:100% !important", @class = "select2-choice" })
+                                        </div>
+                                    </div>
+                                    <div data-row-span="2">
+                                        <div data-field-span="1">
+                                            <label>Branch Name</label>
+                                            @Html.EditorFor(model => model.BranchName, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.BranchName, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div data-field-span="1">
+                                            <label>Opening Year</label>
+                                            @Html.EditorFor(model => model.StartingYear, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.StartingYear, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <br><br>
+                                <fieldset>
+                                    <fieldset>
+                                        <legend>Residential address</legend>
+                                        <div data-row-span="3">
+                                            <div data-field-span="1">
+                                                <label>Address Line 1</label>
+                                                @Html.EditorFor(model => model.AddressLine1, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.AddressLine1, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div data-field-span="1">
+                                                <label>Address Line 2</label>
+                                                @Html.EditorFor(model => model.AddressLine2, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.AddressLine2, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div data-field-span="1">
+                                                <label>Address Line 3</label>
+                                                @Html.EditorFor(model => model.AddressLine3, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.AddressLine3, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div data-row-span="4">
+
+                                            <div data-field-span="1">
+                                                <label>City</label>
+                                                @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div data-field-span="1">
+                                                <label>State</label>
+                                                @Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div data-field-span="1">
+                                                <label>Country</label>
+                                                @Html.EditorFor(model => model.Country, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                                            </div>
+                                            <div data-field-span="1">
+                                                <label>Pincode</label>
+                                                @Html.EditorFor(model => model.Pincode, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.Pincode, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </fieldset>
+                                <br>
+                                <fieldset>
+                                    <legend>Contact Details</legend>
+                                    <div data-row-span="4">
+                                        <div data-field-span="1">
+                                            <label>Contact No. 1</label>
+                                            @Html.EditorFor(model => model.ContactNo1, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.ContactNo1, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div data-field-span="1">
+                                            <label>Contact No. 2</label>
+                                            @Html.EditorFor(model => model.ContactNo2, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.ContactNo2, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div data-field-span="1">
+                                            <label>Email-ID</label>
+                                            @Html.EditorFor(model => model.EmailId, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.EmailId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+                                </fieldset>
+                                <br><br>
+
+                                <div class="clearfix pt-md">
+                                    <div class="pull-right">
+                                        <input type="submit" class="btn-primary btn" value="Submit Form" />
+                                    </div>
+                                </div>
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
